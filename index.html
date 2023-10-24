@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>歌詞の装飾を楽にするツール</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <label for="color-picker">
+        <span id="colorCode" class="span-text">FF0000</span>
+        <input type="color" name="color-picker" id="Color" value="#FF0000">
+    </label>
+    <label for="checkbox01">
+         <input type="checkbox" name="checkbox01" checked>
+         <span class="span-text">color</span>
+    </label>
+    <label for="checkbox02">
+         <input type="checkbox" name="checkbox02">
+         <span class="span-text">size(1~7)</span>
+    </label>
+    <label for="font-size-input">
+        <input type="number" min="1" max="7" value="4" name="font-size-input">
+    </label>
+    <br>
+    <main>
+        <textarea name="lyrics-input"></textarea>
+        <div id="lyricsDisplayArea"></div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
