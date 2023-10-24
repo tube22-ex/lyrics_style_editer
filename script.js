@@ -5,7 +5,10 @@ const lyricsDisplayArea = document.getElementById('lyricsDisplayArea');
 
 document.getElementById('Color').addEventListener('input',(e)=>{
     color = e.target.value;
-    document.getElementById('colorCode').textContent = color;
+    const colorCode = document.getElementById('colorCode')
+    colorCode.textContent = color;
+    colorCode.style.color = color;
+
 })
 
 document.querySelector('input[name="font-size-input"]').addEventListener('input',(e)=>{
@@ -48,7 +51,6 @@ function addTag(T){
     const COLOR = document.querySelector('input[name="checkbox01"]').checked;
     const SIZE = document.querySelector('input[name="checkbox02"]').checked;
 
-    //後でclassにするかも？
     let tag = '';
     if(COLOR){tag += ` color="${color}"`}
     if(SIZE){tag += ` size="${size}"`}
