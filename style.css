@@ -66,8 +66,11 @@ input[type="number"]{
     color: var(--main-color);;
 }
 
-.span-text{
+.span-text:not(#colorCode){
     color: var(--main-color);;
+}
+#colorCode{
+    color: #FF0000;
 }
 
 input[type="color"]{
